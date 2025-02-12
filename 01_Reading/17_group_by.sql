@@ -4,6 +4,12 @@ Lección 10.11: https://youtu.be/OuJerKzV5T0?t=8960
 */
 
 -- Agrupa los resultados por edad diferente
+/*En verdad este ejemplo es medio confuso, ya está 
+agrupando solamente por edad, y luego mostramos el valor
+ maximo de ese grupo, que siempre contendrá los mismos 
+ valores, por lo que terminaria por mostrar uno de cada 
+ grupo
+*/
 SELECT MAX(age) FROM users GROUP BY age
 
 -- Agrupa los resultados por edad diferente y cuenta cuantos registros existen de cada una
