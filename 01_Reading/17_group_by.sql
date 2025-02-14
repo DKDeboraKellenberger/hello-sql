@@ -13,10 +13,13 @@ agrupando solamente por edad, y luego mostramos el valor
 SELECT MAX(age) FROM users GROUP BY age
 
 -- Agrupa los resultados por edad diferente y cuenta cuantos registros existen de cada una
+-- Osea que cuenta cuántos registros hay dentro de cada grupo de edades (cuantos de 36, cuantos de 20...) y luego pone de qué edad habla
 SELECT COUNT(age), age FROM users GROUP BY age
 
 -- Agrupa los resultados por edad diferente, cuenta cuantos registros existen de cada una y los ordena
+-- Ídem la de arriba pero esta vez ordena los resultados de forma ascendente
 SELECT COUNT(age), age FROM users GROUP BY age ORDER BY age ASC
 
 -- Agrupa los resultados por edad diferente mayor de 15, cuenta cuantos registros existen de cada una y los ordena
+-- Cuanta cuantos registros hay en cada grupo de edades en donde éstas sean mayor a 15 y los ordena de forma ascendente
 SELECT COUNT(age), age FROM users WHERE age > 15 GROUP BY age ORDER BY age ASC
